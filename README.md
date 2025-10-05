@@ -27,7 +27,7 @@ pipenv shell
 2. Install dependencies:
 pip install -r requirements.txt
 
-3. Create .env file and use the format in the example.env file 
+3. Create .env file using the format in example.env
 
 3. Setup database:
 python manage.py makemigrations
@@ -100,9 +100,13 @@ drone (foreign key)
 ## Testing
 Run the test suite:
 
-python manage.py test
+python manage.py test drone
 
-Test with Postman or Thunder Client by hitting the endpoints with sample data.
+For detailed test output, run:
+python manage.py test drone --verbosity=2
+
+### Manual Testing:
+You can also test with Postman or Thunder Client by hitting the endpoints with the sample data provided in the API Endpoints section above.
 
 ## Project Structure
 digicoast/
@@ -134,7 +138,3 @@ The API returns descriptive error messages for:
 * Object not found (404)
 * Business rule violations (400)
 * Server errors (500)
-
-
-
-This documentation covers all the essential information needed to understand, install, and use the Drone Fleet Management API while maintaining a professional and clean appearance.
