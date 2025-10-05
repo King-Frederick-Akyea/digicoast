@@ -27,7 +27,7 @@ pipenv shell
 2. Install dependencies:
 pip install -r requirements.txt
 
-3. Create .env file using the format in example.env
+3. Create .env file using the format in example.env file
 
 3. Setup database:
 python manage.py makemigrations
