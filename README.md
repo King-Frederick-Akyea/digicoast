@@ -44,7 +44,7 @@ API available at: http://127.0.0.1:8000/
 ## API Endpoints
 
 Register Drone
-POST /api/drones/
+POST /api/drones/register/
 
 {
     "serial_number": "DRONE_001",
